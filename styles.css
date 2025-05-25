@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Young Serif]';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root{
+    --white:hsl(0, 0%, 100%);
+
+    --main:hsl(30, 54%, 90%);
+
+    --stoneLight:hsl(30, 18%, 87%);
+    --stoneAverage:hsl(30, 10%, 34%);
+    --stoneBold:hsl(24, 5%, 18%);
+
+    --mainTegsColor:hsl(14, 45%, 36%);
+
+    --prepareTegColor:hsl(332, 51%, 32%);
+
+    --prepareBoxColor:hsl(330, 100%, 98%);
+}
+
+/* Global part */
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2rem;
+}
+
+p{
+    font-size: 16px;
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+
+li{
+    margin-bottom: 0.4rem;
+}
+
+span{
+    margin-left: 0.8rem;
+}
+
+h1,h2{
+    font-family: 'Young Serif]';
+    font-weight: 400;
+    color:var(--stoneBold);
+    margin-bottom: 1rem;
+}
+
+h1{
+   font-size: 2.5rem; 
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--mainTegsColor);
+}
+
+/*Cascad structure */
+
+body{
+    background-color: var(--main);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    background-color: var(--white);
+    margin: 15vh auto;
+    padding: 2.7vw;
+    width: 40%;
+    height: auto;
+    border-radius: 3%;
+    color: var(--stoneAverage);
+}
+
+header{
+    margin-bottom: 2rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 3%/5%;
+    margin-bottom: 2rem;
+}
+
+
+
+#description{
+    width: 100%;
+    padding: 0.2rem;
+}
+
+.prepare{
+    background-color: var(--prepareBoxColor);
+    padding: 1rem;
+    border-radius: 2%/4%;
+}
+
+#prepareHeading{
+    color:var(--prepareTegColor);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.prepare ul{
+    padding-inline: 1rem;
+}
+
+
+#preparePoint{
+    margin: 5px;
+}
+
+.prepare li::marker{
+    color: var(--prepareTegColor);
+}
+
+.parts{
+    font-weight: 700;
+}
+
+.ingridients{
+    margin-top: 2.5rem;
+    border-bottom: 1px solid var(--stoneLight);
+}
+
+.ingridients ul{
+    margin: 1.5rem 0.5rem;
+}
+
+.instruction{
+    margin: 2rem auto;
+}
+
+.instruction ol{
+    margin-left: 0.5rem;
+}
+
+.instructionPoint::marker{
+    color: var(--mainTegsColor);
+    font-weight: bold;
+}
+
+.instructionPoint span{
+    line-height: ;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution{
+    display: none;
+}
