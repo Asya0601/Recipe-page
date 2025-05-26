@@ -215,7 +215,7 @@ tr:last-child{
     display: none;
 }
 
-@media screen and (max-width:375px) {
+@media (max-width:375px) {
     *{
         font-size: 14px;
     }
