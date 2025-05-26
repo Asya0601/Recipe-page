@@ -189,6 +189,7 @@ header{
 
 table{
     width:100%;
+    max-width: 100%;
     padding-top: 1rem;
     border-collapse: collapse;
 }
@@ -244,5 +245,17 @@ tr:last-child{
         position:relative;
         margin: 0;
         padding: 0;
+    }
+}
+
+@media (max-width:768px) and (min-width:375px) {
+    #container{
+        width:80%;
+    }
+}
+
+@media (max-width:991px) and (min-width:769px) {
+    #container{
+        width:80%;
     }
 }
